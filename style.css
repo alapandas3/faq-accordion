@@ -1,0 +1,73 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+@font-face {
+    font-family: work;
+    src: url('assets\\fonts\\static\\WorkSans-Bold.ttf');
+  }
+@font-face {
+    font-family: workreg;
+    src: url('assets\\fonts\\static\\WorkSans-Regular.ttf');
+  }
+
+body {
+    background-color: var(--Lightpink);
+    margin: 0;
+}
+
+div.backimage {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+div.inside{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+div.card{
+    position: relative; 
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.123);
+    border-radius: 5%;
+    background-color: white;
+    margin: -90px auto auto auto;
+    text-align: left;
+    width: 30%;
+    z-index: 999;
+    padding: 2%;
+    
+}
+
+
+span.heading{
+    color: var(--Darkpurple);
+    font-size: 50px;
+    font-family: work;
+    font-weight: 600;
+}
+
+div.Q{
+    font-family: work;
+    font-weight: 400;
+    color: var(--Darkpurple);
+    margin-bottom: 4%;
+}
+
+span{
+    font-size: 16px;
+}
+div.FAQ{
+    gap: 10px;
+    display: flex;
+}
+p.para{
+    font-family: workreg;
+    font-size: 16px;
+    display: none;
+    color: var(--Grayishpurple);
+}
