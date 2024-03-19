@@ -13,7 +13,7 @@
     font-family: workreg;
     src: url('assets\\fonts\\static\\WorkSans-Regular.ttf');
   }
-
+  @media only screen and (max-width:1440px){
 body {
     background-color: var(--Lightpink);
     margin: 0;
@@ -27,19 +27,19 @@ div.backimage {
 div.inside{
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: space-between;
 }
 div.card{
     position: relative; 
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.020);
     border-radius: 5%;
     background-color: white;
     margin: -90px auto auto auto;
     text-align: left;
-    width: 30%;
+    width: 28%;
+    height: max-content;
     z-index: 999;
-    padding: 2%;
+    padding: 3%;
     
 }
 
@@ -52,6 +52,8 @@ span.heading{
 }
 
 div.Q{
+    padding: 2%;
+    margin: 25px auto auto auto;
     font-family: work;
     font-weight: 400;
     color: var(--Darkpurple);
@@ -70,4 +72,52 @@ p.para{
     font-size: 16px;
     display: none;
     color: var(--Grayishpurple);
+}
+}
+@media only screen and (width:375px) {
+    button.but{
+        border-width: 0px;
+        border-color: transparent;
+    }
+    body{
+        margin: 0%;
+    }
+    div.FAQ{
+        margin: 2% auto auto 10px;
+    }
+    span.heading{
+        display: flex;
+        align-items: center;
+        padding: 5%;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 1%;
+    }
+    div.Q{
+        padding: 2%;
+        margin: 25px auto auto auto;
+        font-family: work;
+        font-weight: 400;
+        color: var(--Darkpurple);
+        margin-bottom: -4%;
+    }
+    div.card{
+        position: relative; 
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.018);
+        border-radius: 3%;
+        background-color: white;
+        margin: -110px auto auto auto;
+        text-align: left;
+        width: 80%;
+        z-index: 99;
+        padding: 2%;
+        padding-bottom: 10%;
+        
+    }
+    p.para{
+        font-family: workreg;
+        font-size: 16px;
+        display: block;
+        color: var(--Grayishpurple);
+    }
 }
